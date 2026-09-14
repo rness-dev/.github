@@ -12,17 +12,18 @@ is a configuration plane: it never runs a model and is not an agent.
 ## Quick start
 
 ```bash
-npm create rness <your-github-org>   # joins the org's .rness, or starts a new workspace
-cd <your-github-org>
-rness add <repo>                     # clone a repository and declare it
-rness sync                           # refresh every generated block
-rness sync --check                   # in CI: exit 1 when a block is out of date
+npm create rness my-workspace   # asks for your GitHub organization and the repositories to add
+cd my-workspace
+rness add <repo>                # clone another repository and declare it
+rness sync                      # refresh every generated block
+rness sync --check              # in CI: exit 1 when a block is out of date
 ```
 
-A workspace mirrors the organisation:
+`npm create rness` joins the organization's `.rness` when it exists, or starts
+a new workspace. A workspace mirrors the organization:
 
 ```
-<org>/
+my-workspace/
 ├── .rness/        context repository: standards, ADRs, specs, plans, rness.json
 └── org/<repo>/    one clone per repository, each with its generated AGENTS.md block
 ```
