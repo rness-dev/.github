@@ -30,12 +30,30 @@ Security problems never go in a public issue: see [SECURITY.md](SECURITY.md).
 Requirements: Node.js 24 or later, git, and pnpm through Corepack (the exact
 version is pinned in `packageManager`).
 
+Work from your own fork. With the [GitHub CLI](https://cli.github.com):
+
 ```bash
-git clone https://github.com/rness-dev/rness.git
+gh repo fork rness-dev/rness --clone   # forks, clones your fork, adds rness-dev/rness as "upstream"
 cd rness
 corepack enable
 pnpm install
 ```
+
+Without it: fork on GitHub, clone your fork, then
+`git remote add upstream git@github.com:rness-dev/rness.git`.
+
+Start each change on a branch from an up-to-date `main`, push it to your
+fork, and open the pull request against `rness-dev/rness:main`:
+
+```bash
+git fetch upstream && git switch -c fix/short-description upstream/main
+# … commit …
+git push -u origin fix/short-description
+gh pr create --repo rness-dev/rness
+```
+
+Keep **Allow edits by maintainers** checked on the pull request, so small
+fixes can be pushed to your branch instead of going back and forth.
 
 Run the CLI from source:
 
