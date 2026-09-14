@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest a command, a flag, or a change to the workspace model
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do, and what gets in the way today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: How you would like rness to behave — commands, output, files it would read or write
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Workarounds you use today, or other designs you thought about
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      multiple: true
+      options:
+        - create / add (setting a workspace up)
+        - sync / generated AGENTS.md blocks
+        - context / validate
+        - rness.json and the context repository layout
+        - Agent integrations (Claude Code, Codex, Cursor…)
+        - Documentation
+        - Other

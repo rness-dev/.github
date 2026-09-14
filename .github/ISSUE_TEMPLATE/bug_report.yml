@@ -1,0 +1,62 @@
+name: Bug report
+description: Something in rness does not work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Security problems do not belong here — see the security policy linked on the previous page.
+        Remove anything private before posting: internal repository URLs, tokens, the content of your standards.
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - '@rness/cli (rness)'
+        - create-rness / @rness/create (npm create rness)
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: rness version
+      description: Output of `rness --version`
+      placeholder: 0.4.0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Node.js version (`node --version`), package manager and version, operating system
+      placeholder: Node 24.16.0, pnpm 12.2.1, macOS 26
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Command
+      description: The exact command you ran, and where (workspace root, `.rness/`, `org/<repo>/`…)
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour and output
+      description: Run the command again with `RNESS_DEBUG=1` and paste the output
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Workspace details
+      description: Anything relevant — the shape of `rness.json` (names changed if needed), monorepo or polyrepo, the agents you use

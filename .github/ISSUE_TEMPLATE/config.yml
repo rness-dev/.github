@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/rness-dev/rness/security/advisories/new
+    about: Privately, never in a public issue.
+  - name: Documentation
+    url: https://github.com/rness-dev/rness/blob/main/packages/cli/README.md
+    about: Commands, flags and upgrade notes of the rness CLI.
