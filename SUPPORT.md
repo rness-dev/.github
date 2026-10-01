@@ -6,11 +6,15 @@
   command you ran and its output with `RNESS_DEBUG=1`.
 - **An idea or a missing feature:** open a
   [feature request](https://github.com/rness-dev/rness/issues/new?template=feature_request.yml).
-- **A question on how to use rness:** open an
-  [issue](https://github.com/rness-dev/rness/issues/new) and add the
-  `question` label. Check the
+- **A question on how to use rness:** ask in
+  [Discussions, Q&A](https://github.com/rness-dev/rness/discussions/categories/q-a).
+  Check the [documentation](https://rness.dev/docs) and the
   [CLI README](https://github.com/rness-dev/rness/blob/main/packages/cli/README.md)
   first.
+- **An idea to discuss before it is a feature request:**
+  [Discussions, Ideas](https://github.com/rness-dev/rness/discussions/categories/ideas).
+- **Something you built with rness:**
+  [Discussions, Show and tell](https://github.com/rness-dev/rness/discussions/categories/show-and-tell).
 - **A security problem:** never in public — follow [SECURITY.md](SECURITY.md).
 
 Before posting, remove anything private from what you paste: internal

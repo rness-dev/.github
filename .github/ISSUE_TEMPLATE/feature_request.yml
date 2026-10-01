@@ -29,8 +29,11 @@ body:
       options:
         - create / add (setting a workspace up)
         - sync / generated AGENTS.md blocks
-        - context / validate
+        - status / pulse (Agent Pulse on a GitHub Project)
+        - upgrade (the pinned version, the scaffold)
+        - context / validate / mcp
         - rness.json and the context repository layout
-        - Agent integrations (Claude Code, Codex, Cursor…)
+        - Claude Code (hooks, skills, the plugin)
+        - Other agents (Codex, Cursor, GitHub Copilot…)
         - Documentation
         - Other

@@ -11,8 +11,11 @@ what is specific to it. By taking part you agree to the
   npm packages. Bugs, features and pull requests are welcome here.
 - **[rness-dev/.github](https://github.com/rness-dev/.github)** — these
   organisation-wide files.
-- Other repositories of the organisation are private and do not take outside
-  contributions.
+- **[rness-dev/docs](https://github.com/rness-dev/docs)** — the public
+  documentation, [rness.dev/docs](https://rness.dev/docs). Fixes and
+  clarifications are welcome; `pnpm build` is its only check.
+- The other repositories of the organisation are private and do not take
+  outside contributions.
 
 Security problems never go in a public issue: see [SECURITY.md](SECURITY.md).
 

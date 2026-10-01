@@ -3,6 +3,9 @@ contact_links:
   - name: Report a security vulnerability
     url: https://github.com/rness-dev/rness/security/advisories/new
     about: Privately, never in a public issue.
+  - name: Ask a question
+    url: https://github.com/rness-dev/rness/discussions/categories/q-a
+    about: How to use rness, in Discussions.
   - name: Documentation
-    url: https://github.com/rness-dev/rness/blob/main/packages/cli/README.md
-    about: Commands, flags and upgrade notes of the rness CLI.
+    url: https://rness.dev/docs
+    about: The guide, the commands and the changelog of each release.
